@@ -58,22 +58,21 @@ function obterTarefaPorId(id) {
   }
 }
 
-// Função auxiliar para gerar IDs únicos
 function gerarId() {
   return new Date().getTime();
 }
 
-// Função auxiliar para encontrar o índice de uma tarefa pelo ID
+
 function encontrarIndicePorId(id) {
   return listaDeTarefas.findIndex((tarefa) => tarefa.id === id);
 }
 
-// Função auxiliar para encontrar uma tarefa pelo ID
+
 function encontrarTarefaPorId(id) {
   return listaDeTarefas.find((tarefa) => tarefa.id === id);
 }
 
-// Exemplos de uso:
+
 adicionarTarefa("Estudar JavaScript");
 adicionarTarefa("Fazer Exercicios");
 listarTarefas();
